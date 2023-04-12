@@ -1,0 +1,15 @@
+server:
+  error:
+    include-message: always
+    include-binding-error: always
+
+    spring:
+      datasource:
+        password:
+#          url: jdbc:sqlserver://;serverName=uat.ifca.co.id;port=1436;databaseName=test;trustServerCertificate=true;
+          url: jdbc:sqlserver://localhost:1436/test
+          username:
+        jpa:
+          hibernate:
+            ddl-auto: create-drop
+            properties:
